@@ -3,14 +3,14 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: susmitha756/susmi:dbimage
+   image: saikumar1323/docker:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: susmitha756/susmi:appimage
+   image: saikumar1323/docker:appimage
    container_name: appcontainer
    ports:
-     - "1234:8080"
+     - "1323:8080"
    depends_on:
      - "devopsdb"
