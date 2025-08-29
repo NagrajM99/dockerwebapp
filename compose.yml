@@ -3,12 +3,12 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: nagrajm99/clvt:dbimage
+   image: nagrajm99/sbapp:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: nagrajm99/clvt:webimage
+   image: nagrajm99/sbapp:appimage
    container_name: appcontainer
    ports:
      - "1323:8080"
